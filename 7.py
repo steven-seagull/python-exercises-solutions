@@ -4,9 +4,13 @@ rows = int(x)
 cols = int(y)
 
 
-result = [[]]
-for i in range(0, rows):
-    for j in range(0, cols):
-        result[i][j] = i * j
+result = []
 
-print(results)
+for i in range(0, rows):
+    row = []
+    for j in range(0, cols):
+        row.append(i * j)
+    result.append(row)
+
+print(result)
+
